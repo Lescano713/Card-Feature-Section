@@ -9,3 +9,6 @@
     --NeutralGrayishBlue: hsl(229, 6%, 66%);
     --NeutralVeryLightGray: hsl(0, 0%, 98%);
 }
+body{
+    background-color: var(--NeutralGrayishBlue);
+}
