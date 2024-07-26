@@ -18,7 +18,7 @@ const features = [
         name: "Karma",
         color: "hsl(34, 97%, 64%)",
         paragraph: "Regularly evaluates our talent to ensure quality",
-        img: './images/icon-Karma.svg',
+        img: './images/icon-karma.svg',
     },
     {
         name: "Calculator",

@@ -46,45 +46,69 @@
 
 ### What I learned
 
-<p>Use of classes to separate the content and recycle them when it's necessary, making the structure cleaner and readeable.This approach not only improves code maintainability but also allows for easier updates and scalability.</p>
+<p>I learned about the use of grid areas, using span to organize the elements according to the design</p>
 
-```html
-<div class="recipe-preparation-time">
-  <h3>Preparation time</h3>
-  <ul class="preparation-time-list">
-    <li><span class="span-bold">Total:</span> Approximately 10 minutes</li>
-    <li><span class="span-bold">Preparation:</span> 5 minutes</li>
-    <li><span class="span-bold">Cooking:</span>: 5 minutes</li>
-  </ul>
-</div>
-<div class="nutrition-table">
-  <p>Carbs</p>
-  <span class="grams-table">0g</span>
-</div>
-<div class="nutrition-table">
-  <p>Protein</p>
-  <span class="grams-table">20g</span>
-</div>
-```
-
-<p>Using media queries to fit the content depending on the user's device ensures that the layout is responsive and looks good on all screen sizes. This is crucial for improving user experience on different devices.</p>
 
 ```css
-@media (min-width: 500px) {
-    section{
-        margin: 8px 30px 8px 30px;
-        
+    .supervisor{
+      grid-column: span 1/2;
     }
-    body{
-        padding: 50px;
+    .supervisor, .calculator{
+      align-self: flex-start;
+      grid-row:span 2/4;
     }
-}
+    .calculator{
+      grid-column: span 1/4;
+    }
 ```
+<p>Also I implemented media queries and grid to make the cards responsive on different devices.</p>
+
+```css
+    @media (max-width: 850px) {
+      main{
+          grid-template-columns: repeat(auto-fit ,minmax(13em,1fr)) ;
+          grid-gap: 20px 50px;
+          grid-template-rows: auto;
+          width: 90dvw;
+          .feature-container{
+              grid-column: unset;
+              grid-row: unset;
+              max-height: 10em;
+          }
+      }
+    }
+```
+<p>To add more cards without writing the elements directly in the html I facilitated the entry of data using objects and arrays, dividing it by name, color, paragraph and image</p>
+
+```js
+ const features =[{
+        name: "Supervisor",
+        color: "hsl(180, 62%, 55%)",
+        paragraph: "Monitors activity to identify project roadblocks",
+        img: './images/icon-supervisor.svg',
+    },]
+
+```
+<p>Then, I created a function that adds the elements in the DOM from the entered data.</p>
+
+```js
+ function createCards (){
+    main.innerHTML = "";
+    features.forEach(feature =>{
+      //html elements
+      })
+    }
+```
+
+
 
 
 ### Continued development
 
-<p>For future development, I plan to focus on enhancing my skills in CSS animations to create more interactive and engaging user interfaces. Additionally, I want to delve deeper into JavaScript to add more dynamic functionalities to my web projects.</p>
-
-<p>Another area for improvement is optimizing the website for better performance by minimizing CSS and JavaScript files, and ensuring images are properly compressed without losing quality.</p>
+<p>In future development, I plan to focus on several key areas:</p>
+<p>- <strong>Advanced CSS Grid Techniques</strong>: Further exploration of complex grid layouts and the use of <code>grid-template-areas</code> for more flexible and maintainable designs.</p>
+<p>- <strong>Responsive Design</strong>: Enhancing responsive layouts using media queries to ensure that web applications look great on all devices.</p>
+<p>- <strong>JavaScript Best Practices</strong>: Improving JavaScript code readability and performance by refactoring and leveraging ES6 features like template literals and destructuring.</p>
+<p>- <strong>Integrating APIs</strong>: Fetching and displaying data from external APIs to create more dynamic and interactive web applications.</p>
+<p>These areas will help me build more sophisticated, user-friendly, and performant web applications.</p>
 
