@@ -9,6 +9,62 @@
     --NeutralGrayishBlue: hsl(229, 6%, 66%);
     --NeutralVeryLightGray: hsl(0, 0%, 98%);
 }
-body{
-    background-color: var(--NeutralGrayishBlue);
+*{
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: var(--fontsize);
 }
+body{
+    background-color: var(--NeutralVeryLightGray);
+    padding: 1.3em;
+    display: flex;
+    
+    height: 100dvh;
+    flex-direction: column;
+    h1, b{
+        font-size: 30px;
+    }
+    h1{
+        font-weight: normal;
+    }
+    p{
+        color: var(--NeutralGrayishBlue);
+    }
+    h1,p{
+        text-align: center;
+    }
+}
+
+main{
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
+    grid-auto-flow: dense;
+    
+}
+
+
+.feature-container{
+    border-radius: 10px;
+    /* max-width: 30rem; */
+    /* width: 80%; */
+    padding: 2rem;
+    margin: 20px;
+    box-shadow: 0 0 20px 0px var(--NeutralGrayishBlue);
+    text-align: end;
+    h2{
+        font-size: 25px
+    }
+    h2,p{
+        text-align: start;
+    }
+}
+
+/* @media (max-width: 480px) {
+    main{
+        display: grid;
+    justify-items: center;
+        grid-template-columns: repeat(auto-fit ,minmax(200px,1fr)) ;
+    }
+} */
