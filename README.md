@@ -1,4 +1,4 @@
-# Frontend Mentor - Recipe page solution
+# Frontend Mentor - Four Card Feature Section Solution
 
 <div align="left">
   <a href="https://www.linkedin.com/in/danae-lescano-salvatierra" target="_blank">
