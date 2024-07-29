@@ -30,7 +30,7 @@ body{
         max-width: 90%;
         width: 35em;
         .title{
-            font-weight: 300;
+            font-weight: 200;
             b{
                 font-weight: 600;
             }
@@ -75,7 +75,8 @@ main{
     max-height: 20rem;
     text-align: start;
     h2{
-        font-size: 22px
+        font-size: 22px;
+        font-weight: 600;
     }
     img{
         width:4.2em;
