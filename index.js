@@ -36,14 +36,18 @@ function createCards (){
         let section = document.createElement('section');
         section.classList.add('feature-container');
         section.classList.add(feature.name.toLowerCase().replace(/\s+/g, '-'))
-        section.style.borderTop = ` 4px solid ${feature.color}` 
+        section.style.borderTop = ` 4px solid ${feature.color}`;
+        
         let h2 = document.createElement('h2');
         h2.innerText = feature.name ;
+
         let p = document.createElement('p');
         p.innerText = feature.paragraph ;
+
         let img = document.createElement('img');
         img.src = feature.img;
         img.alt = `${feature.name}-image`
+        
         section.appendChild(h2);
         section.appendChild(p);
         section.appendChild(img)

@@ -25,30 +25,29 @@ body{
     padding: 1.3em 1em;
     height: 100dvh;
     align-items: center;
+    padding: 2em;
+    header{
+        max-width: 90%;
+        width: 35em;
+        .title{
+            font-weight: normal;
+            font-size: clamp(1.625rem, 1.491rem + 0.566vw, 2rem);
+        }
+        .about-text{
+            margin: 20px 0 30px;
+        }
+    }
     .title, b{
         font-size: 32px;
     }
     .title, h2 , b{
         color: var(--NeutralVeryDarkBlue);
     }
-    .title{
-        font-weight: normal;
-        width: 15em;
-        font-size: clamp(1.625rem, 1.491rem + 0.566vw, 2rem);
-        min-width: 15em;
-        max-width: 90%;
-    }
     p{
         color: var(--NeutralGrayishBlue);
     }
-    .about-text{
-        margin: 20px 0 30px;
-        max-width: 30em;
-        width: 90%;
-    }
     h1, .about-text{
         text-align: center;
-        
     }
 }
 
@@ -67,17 +66,17 @@ main{
     max-width: 23em;
     width: 100%;
     min-width: 15em;
-    min-height: 18.5em;
+    min-height: 18em;
     padding: 1.9rem;
     margin: 20px;
     box-shadow: 5px 10px 30px 0px hsla(240, 4%, 85%, 0.9);
     max-height: 20rem;
     text-align: start;
     h2{
-        font-size: 25px
+        font-size: 24px
     }
     img{
-        width:5em;
+        width:4.5em;
         align-self: flex-end;
         justify-self: end;
     }
@@ -112,7 +111,7 @@ main{
         .feature-container{
             grid-column: unset;
             grid-row: unset;
-            max-height: 10em;
+            max-height: 11em;
         }
     }
 }
